@@ -110,7 +110,7 @@ const Guides = () => {
                 Guides Touristiques Professionnels
               </h1>
               <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
-                Découvrez le Maroc avec nos guides expérimentés et passionnés
+                Découvrez l'Algérie avec nos guides expérimentés et passionnés
               </p>
             </motion.div>
           </div>

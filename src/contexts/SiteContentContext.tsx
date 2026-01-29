@@ -122,13 +122,13 @@ export const useSiteContent = () => {
 // ================================================
 const getDefaultContent = (): Record<string, string> => ({
   // Hero Section
-  'home.hero.title': 'Découvrez le Maroc',
+  'home.hero.title': 'Découvrez l\'Algérie',
   'home.hero.subtitle': 'Votre voyage commence ici',
-  'home.hero.description': 'Explorez les merveilles du Maroc avec nos services de qualité',
+  'home.hero.description': 'Explorez les merveilles de l\'Algérie avec nos services de qualité',
   
   // About Section
   'home.about.title': 'À propos de nous',
-  'home.about.description': 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles du Maroc.',
+  'home.about.description': 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles de l\'Algérie .',
   
   // Why Choose Us
   'home.why.title': 'Pourquoi nous choisir ?',
@@ -150,7 +150,7 @@ const getDefaultContent = (): Record<string, string> => ({
   
   // Footer
   'footer.text': '© 2024 Algérie Soleil. Tous droits réservés.',
-  'footer.description': 'Votre partenaire de confiance pour découvrir le Maroc',
+  'footer.description': 'Votre partenaire de confiance pour découvrir l\'Algérie',
   
   // Common
   'common.loading': 'Chargement...',

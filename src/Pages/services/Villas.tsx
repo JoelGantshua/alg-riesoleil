@@ -189,7 +189,7 @@ const VillasPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
   <ServiceHero 
   title="Nos Villas de Luxe" 
-  subtitle="Découvrez notre sélection exclusive de villas pour des vacances inoubliables au Maroc" 
+  subtitle="Découvrez notre sélection exclusive de villas pour des vacances inoubliables en Algérie" 
   images={['/assets/hero/A.jpg', '/assets/hero/B.jpg']}
   searchPlaceholder="Rechercher une villa..."
   onSearch={(query) => setSearchQuery(query)}

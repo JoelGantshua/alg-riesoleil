@@ -296,8 +296,8 @@ const Tourisme = () => {
     return (
       <div className="min-h-screen bg-gray-50">
         <ServiceHero
-          title="Découvrez le Maroc"
-          subtitle="Explorez nos circuits touristiques à travers les plus belles villes du Maroc."
+          title="Découvrez  l\'Algérie "
+          subtitle="Explorez nos circuits touristiques à travers les plus belles villes de  l\'Algérie ."
           images={heroImages}
           searchPlaceholder="Rechercher une destination, un circuit..."
           onSearch={handleHeroSearch}
@@ -326,8 +326,8 @@ const Tourisme = () => {
     return (
       <div className="min-h-screen bg-gray-50">
         <ServiceHero
-          title="Découvrez le Maroc"
-          subtitle="Explorez nos circuits touristiques à travers les plus belles villes du Maroc."
+          title="Découvrez  l\'Algérie "
+          subtitle="Explorez nos circuits touristiques à travers les plus belles villes de  l\'Algérie ."
           images={heroImages}
           searchPlaceholder="Rechercher une destination, un circuit..."
           onSearch={handleHeroSearch}
@@ -345,8 +345,8 @@ const Tourisme = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <ServiceHero
-        title="Découvrez le Maroc"
-        subtitle="Explorez nos circuits touristiques à travers les plus belles villes du Maroc. Des expériences authentiques et inoubliables vous attendent."
+        title="Découvrez  l'Algérie "
+        subtitle="Explorez nos circuits touristiques à travers les plus belles villes de l'Algérie. Des expériences authentiques et inoubliables vous attendent."
         images={heroImages}
         searchPlaceholder="Rechercher une destination, un circuit..."
         onSearch={handleHeroSearch}

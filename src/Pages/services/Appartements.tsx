@@ -116,7 +116,7 @@ const Appartements: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       <ServiceHero
         title="Nos Appartements"
-        subtitle="Découvrez notre sélection d'appartements pour un séjour confortable au Maroc"
+        subtitle="Découvrez notre sélection d'appartements pour un séjour confortable d'Algérie"
         images={[
           '/assets/hero/A.jpg',
           '/assets/hero/B.jpg',

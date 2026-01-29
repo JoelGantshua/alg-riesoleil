@@ -120,7 +120,7 @@ const Hotels: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       <ServiceHero
         title="Nos Hôtels"
-        subtitle="Découvrez notre sélection d'hôtels de charme pour un séjour inoubliable au Maroc"
+        subtitle="Découvrez notre sélection d'hôtels de charme pour un séjour inoubliable en Algérie"
         images={[
           '/assets/hero/A.jpg',
           '/assets/hero/B.jpg',

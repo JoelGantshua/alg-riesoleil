@@ -7,28 +7,28 @@ const slides = [
     id: 1,
     title: "Découvrez les merveilles de l'Algérie ",
     subtitle: "Des paysages à couper le souffle vous attendent",
-    image: "/assets/hero/A.jpg",
+    image: "./images/18.jpg",
     cta: "Explorer maintenant"
   },
   {
     id: 2,
     title: "Séjours inoubliables",
     subtitle: "Trouvez l'hébergement parfait pour vos vacances",
-    image: "/assets/hero/B.jpg",
+    image: "./images/12.jpg",
     cta: "Voir les offres"
   },
   {
     id: 3,
     title: "Aventures en plein air",
     subtitle: "Découvrez des expériences uniques",
-    image: "/assets/hero/C.jpg",
+    image: "./images/9.jpg",
     cta: "Découvrir"
   },
   {
     id: 4,
     title: "Culture et traditions",
     subtitle: "Plongez dans l'authenticité Algérienne",
-    image: "/assets/hero/D.jpg",
+    image: "./images/5.jpg",
     cta: "En savoir plus"
   }
 ];

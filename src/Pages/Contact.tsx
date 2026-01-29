@@ -275,7 +275,7 @@ const Contact = () => {
                 <div className="bg-white p-1 rounded-xl shadow-lg overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 w-full h-64 md:h-80">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105994.7791205954!2d-5.620421386965054!3d33.88097757686905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda044d23bfc49d1%3A0xfbbf80a99e4cde18!2zTWVrbsOocw!5e0!3m2!1sfr!2sma!4v1761441304461!5m2!1sfr!2sma"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204628.438878535!2d2.974518310142944!3d36.73890482180594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb26977ea659f%3A0x4231102d38a36f49!2zQWxnZXIsIEFsZ8Opcmll!5e0!3m2!1sfr!2sma!4v1769701729178!5m2!1sfr!2sma"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}

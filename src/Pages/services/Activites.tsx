@@ -181,7 +181,7 @@ const Activites = () => {
                   {/* Image */}
                   <div className="h-64 overflow-hidden relative">
                     <img
-                      src={activite.images?.[0] || '/assets/hero/hero1.jpg'}
+                      src={activite.images?.[0] || './images/15.jpg'}
                       alt={activite.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />

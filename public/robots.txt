@@ -1,4 +1,4 @@
-# robots.txt pour MarocSoleil
+# robots.txt pour AlgérieSoleil
 # Optimisé pour Google, Bing, Yahoo, Baidu
 
 User-agent: *
@@ -27,7 +27,7 @@ Allow: /*.webp
 Allow: /*.svg
 
 # Sitemap
-Sitemap: https://marocsoleil.com/sitemap.xml
+Sitemap: https://algériesoleil.com/sitemap.xml
 
 # Crawl-delay pour éviter la surcharge
 Crawl-delay: 1

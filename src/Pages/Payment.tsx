@@ -380,8 +380,8 @@ const Payment: React.FC = () => {
                   {/* Paiement en espèces */}
                   {paymentMethod === 'cash' && (
                     <div className="space-y-4">
-                      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                        <p className="text-yellow-800">
+                      <div className="bg-white border border-white rounded-lg p-4">
+                        <p className="text-white">
                           Vous pourrez payer en espèces lors de la prise en charge du service.
                         </p>
                       </div>
@@ -405,11 +405,11 @@ const Payment: React.FC = () => {
                   {/* Virement bancaire */}
                   {paymentMethod === 'bank_transfer' && (
                     <div className="space-y-4">
-                      <div className="bg-emerald-50 border border-blue-200 rounded-lg p-4">
-                        <p className="text-emerald-800 mb-2 font-medium">
+                      <div className="bg-white border border-white rounded-lg p-4">
+                        <p className="text-white mb-2 font-medium">
                           Coordonnées bancaires :
                         </p>
-                        <p className="text-sm text-emerald-700">
+                        <p className="text-sm text-white">
                           Banque : Attijariwafa Bank<br />
                           IBAN : MA64 0011 0000 0000 0123 4567 89<br />
                           BIC/SWIFT : BCMAMAMC<br />

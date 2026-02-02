@@ -126,7 +126,7 @@ const CircuitDetails = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {circuit.highlights.map((highlight, index) => (
                     <div key={index} className="flex items-start gap-2">
-                      <Star className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
+                      <Star className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{highlight}</span>
                     </div>
                   ))}

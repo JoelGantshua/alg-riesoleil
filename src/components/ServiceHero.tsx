@@ -120,7 +120,7 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({
               setIsAutoPlaying(false);
               prevSlide();
             }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-yellow-200/90 text-gray-800 hover:bg-yellow-200 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white text-gray-800 hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl"
             aria-label="Précédent"
           >
             <FiChevronLeft size={24} />
@@ -131,7 +131,7 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({
               setIsAutoPlaying(false);
               nextSlide();
             }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-yellow-00/90 text-gray-800 hover:bg-yellow-200 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white text-gray-800 hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl"
             aria-label="Suivant"
           >
             <FiChevronRight size={24} />
@@ -148,8 +148,8 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({
                 }}
                 className={`w-3 h-3 rounded-full transition-all duration-300 shadow-md ${
                   currentSlide === index 
-                    ? 'bg-yellow-200 w-8 shadow-lg' 
-                    : 'bg-yellow-200/60 hover:bg-yellow-200/90'
+                    ? 'bg-white w-8 shadow-lg' 
+                    : 'bg-white hover:bg-white'
                 }`}
                 aria-label={`Aller au slide ${index + 1}`}
               />

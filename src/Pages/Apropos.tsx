@@ -10,7 +10,7 @@ const Apropos = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-yellow-100 to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-white">
       {/* Hero Section */}
       <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(public/about/mk.webp)' }}>
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -22,7 +22,7 @@ const Apropos = () => {
       </div>
 
       {/* About Section */}
-      <section className="py-16 bg-yellow-100">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Notre Histoire</h2>
@@ -38,7 +38,7 @@ const Apropos = () => {
             {stats.map((stat) => (
               <motion.div 
                 key={stat.id}
-                className="bg-yellow-50 p-6 rounded-xl shadow-lg text-center"
+                className="bg-white p-6 rounded-xl shadow-lg text-center"
                 whileHover={{ y: -5 }}
               >
                 <div className="flex justify-center mb-3">
@@ -53,7 +53,7 @@ const Apropos = () => {
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div 
-              className="bg-primary/5 p-8 rounded-2xl"
+              className="bg-white p-8 rounded-2xl"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -65,19 +65,19 @@ const Apropos = () => {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 text-primary mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5 text-white mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span>Voyages personnalisés et authentiques</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 text-primary mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5 text-white mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span>Engagement envers le tourisme durable</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 text-primary mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5 text-white mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span>Service client exceptionnel 24/7</span>
@@ -101,13 +101,13 @@ const Apropos = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 md:p-12 text-black text-center">
+          <div className="bg-gradient-to-r from-white to-white/90 rounded-2xl p-8 md:p-12 text-black text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Prêt à vivre l'aventure Algérienne ?</h3>
             <p className="text-black/90 mb-8 max-w-2xl mx-auto">
               Contactez-nous dès aujourd'hui pour créer l'itinéraire de voyage parfait pour votre prochaine aventure Algérienne.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-yellow-50 transition-colors">
+              <button className="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-yellow-50 transition-colors">
                 Contactez-nous
               </button>
               <button className="bg-transparent border-2 border-black text-black px-8 py-3 rounded-lg font-medium hover:bg-yellow-50 transition-colors">

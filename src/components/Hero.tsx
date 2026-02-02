@@ -143,7 +143,7 @@ const Hero = () => {
           setIsAutoPlaying(false);
           prevSlide();
         }}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-yellow-200/90 text-gray-800 hover:bg-yellow-200 hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white text-gray-800 hover:bg-white hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl"
         aria-label="Précédent"
       >
         <FiChevronLeft size={24} />
@@ -154,7 +154,7 @@ const Hero = () => {
           setIsAutoPlaying(false);
           nextSlide();
         }}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-yellow-200/90 text-gray-800 hover:bg-yellow-200 hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white text-gray-800 hover:bg-white hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl"
         aria-label="Suivant"
       >
         <FiChevronRight size={24} />
@@ -169,7 +169,7 @@ const Hero = () => {
               setIsAutoPlaying(false);
               goToSlide(index);
             }}
-            className={`w-3 h-3 rounded-full transition-all duration-300 shadow-md ${currentSlide === index ? 'bg-yellow-200 w-8 shadow-lg' : 'bg-yellow-200/60 hover:bg-yellow-400/90'}`}
+            className={`w-3 h-3 rounded-full transition-all duration-300 shadow-md ${currentSlide === index ? 'bg-white w-8 shadow-lg' : 'bg-white/60 hover:bg-white/90'}`}
             aria-label={`Aller au slide ${index + 1}`}
           />
         ))}
@@ -223,7 +223,7 @@ const Hero = () => {
           >
             <a 
               href="services" 
-                   className="inline-flex items-center bg-yellow-200 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-200 transition-all duration-300 transform hover:scale-105"
+                   className="inline-flex items-center bg-yellow-500 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-200 transition-all duration-300 transform hover:scale-105"
             >
               {slides[currentSlide] ? slides[currentSlide].cta : ''}
             </a>

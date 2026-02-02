@@ -111,7 +111,7 @@ const HotelCard: React.FC<HotelCardProps> = ({
 
         {/* Note */}
         <div className="absolute top-2 left-2 bg-white/90 px-2 py-1 rounded-full text-xs font-semibold flex items-center">
-          <Star className="w-3 h-3 text-yellow-500 mr-1" fill="#f59e0b" />
+          <Star className="w-3 h-3 text-white mr-1" fill="#f59e0b" />
           {rating?.toFixed(1) || 'Nouveau'}
         </div>
       </div>
@@ -163,7 +163,7 @@ const HotelCard: React.FC<HotelCardProps> = ({
         {showActions && (
           <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
             <div className="flex items-center">
-              <Star className="w-4 h-4 text-yellow-500 mr-1" fill="#f59e0b" />
+              <Star className="w-4 h-4 text-white mr-1" fill="#f59e0b" />
               <span className="text-sm font-medium text-gray-700">
                 {rating ? rating.toFixed(1) : 'Nouveau'}
               </span>

@@ -134,7 +134,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Section */}
-      <section className="py-16 bg-yellow-100">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -152,7 +152,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-yellow-50 p-8 rounded-2xl shadow-xl"
+                className="bg-white p-8 rounded-2xl shadow-xl"
               >
                 <div className="flex items-center mb-6">
                   <div className="bg-primary/10 p-3 rounded-full mr-4">
@@ -257,7 +257,7 @@ const Contact = () => {
                       href={item.link || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-start p-6 bg-yellow-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                      className="flex items-start p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                       whileHover={{ y: -5 }}
                     >
                       <div className="bg-primary/10 p-3 rounded-full mr-4 flex-shrink-0">
@@ -293,7 +293,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-yellow-100">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Questions fréquentes</h2>

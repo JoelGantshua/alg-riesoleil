@@ -1,29 +1,29 @@
 // Configuration SEO optimisée pour Google - MarocSoleil
 export const SEO_CONFIG = {
   // Informations principales
-  siteName: 'MarocSoleil - Plateforme Touristique N°1 au Maroc',
-  siteUrl: 'https://marocsoleil.com',
-  defaultTitle: 'MarocSoleil | Réservation Hôtels, Circuits, Voitures & Immobilier au Maroc',
-  defaultDescription: 'Découvrez le Maroc avec MarocSoleil : Réservation d\'hôtels, appartements, villas, circuits touristiques, location de voitures, guides professionnels. Meilleurs prix garantis. Paiement sécurisé.',
+  siteName: 'AlgérieSoleil - Plateforme Touristique N°1 au Maroc',
+  siteUrl: 'https://algériesoleil.com',
+  defaultTitle: 'AlgérieSoleil | Réservation Hôtels, Circuits, Voitures & Immobilier au Maroc',
+  defaultDescription: 'Découvrez l\'Algérie avec AlgérieSoleil : Réservation d\'hôtels, appartements, villas, circuits touristiques, location de voitures, guides professionnels. Meilleurs prix garantis. Paiement sécurisé.',
   defaultKeywords: [
     // Mots-clés principaux (high volume)
-    'maroc tourisme',
-    'voyage maroc',
-    'hotel maroc',
-    'réservation maroc',
-    'vacances maroc',
+    'algérie tourisme',
+    'voyage algérie',
+    'hotel algérie',
+    'réservation algérie',
+    'vacances algérie',
     
     // Mots-clés spécifiques services
-    'location voiture maroc',
-    'circuit touristique maroc',
-    'appartement maroc',
-    'villa maroc',
-    'riad maroc',
-    'guide touristique maroc',
+    'location voiture algérie',
+    'circuit touristique algérie',
+    'appartement algérie',
+    'villa algérie',
+    'riad algérie',
+    'guide touristique algérie',
     
     // Mots-clés villes principales
-    'hotel marrakech',
-    'hotel casablanca',
+    'hotel alger',
+    'hotel oran',
     'hotel agadir',
     'hotel fes',
     'hotel tanger',
@@ -32,27 +32,27 @@ export const SEO_CONFIG = {
     'hotel chefchaouen',
     
     // Mots-clés longue traîne
-    'réserver hotel maroc pas cher',
-    'meilleur circuit maroc',
-    'location voiture maroc aéroport',
-    'appartement vacances maroc',
-    'villa avec piscine maroc',
-    'guide francophone maroc',
-    'excursion desert maroc',
-    'weekend maroc',
+    'réserver hotel algérie pas cher',
+    'meilleur circuit algérie',
+    'location voiture algérie aéroport',
+    'appartement vacances algérie',
+    'villa avec piscine algérie',
+    'guide francophone algérie',
+    'excursion desert algérien',
+    'weekend algérien',
     
     // Mots-clés immobilier
-    'immobilier maroc',
-    'acheter maison maroc',
-    'location appartement maroc',
-    'villa a vendre maroc',
+    'immobilier algérie',
+    'acheter maison algérie',
+    'location appartement algérie',
+    'villa a vendre algérie',
     
     // Mots-clés activités
-    'activités maroc',
-    'que faire au maroc',
-    'tourisme maroc 2024',
-    'voyage organisé maroc',
-    'séjour tout compris maroc',
+    'activités algérie',
+    'que faire au algérie',
+    'tourisme algérie 2024',
+    'voyage organisé algérie',
+    'séjour tout compris algérie',
   ],
   
   // Open Graph (Facebook, LinkedIn)
@@ -61,8 +61,8 @@ export const SEO_CONFIG = {
   
   // Twitter Card
   twitterCard: 'summary_large_image',
-  twitterSite: '@MarocSoleil',
-  twitterCreator: '@MarocSoleil',
+  twitterSite: '@AlgérieSoleil',
+  twitterCreator: '@AlgérieSoleil',
   
   // Informations de contact
   contact: {
@@ -73,10 +73,10 @@ export const SEO_CONFIG = {
   
   // Réseaux sociaux
   social: {
-    facebook: 'https://facebook.com/marocsoleil',
-    instagram: 'https://instagram.com/marocsoleil',
-    twitter: 'https://twitter.com/marocsoleil',
-    linkedin: 'https://linkedin.com/company/marocsoleil',
+    facebook: 'https://facebook.com/algériesoleil',
+    instagram: 'https://instagram.com/algériesoleil',
+    twitter: 'https://twitter.com/algériesoleil',
+    linkedin: 'https://linkedin.com/company/algériesoleil',
   },
   
   // Langues disponibles
@@ -86,21 +86,21 @@ export const SEO_CONFIG = {
   // Données structurées
   organization: {
     '@type': 'TravelAgency',
-    name: 'MarocSoleil',
-    description: 'MarocSoleil est une plateforme de réservation touristique au Maroc : hébergements, circuits, activités et location de voitures.',
-    url: 'https://marocsoleil.com',
-    logo: 'https://marocsoleil.com/logo.png',
+    name: 'AlgérieSoleil',
+    description: 'AlgérieSoleil est une plateforme de réservation touristique au Maroc : hébergements, circuits, activités et location de voitures.',
+    url: 'https://algériesoleil.com',
+    logo: 'https://algériesoleil.com/logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+212-XXX-XXX-XXX',
+      telephone: '+212-669-742780',
       contactType: 'customer service',
       areaServed: 'MA',
       availableLanguage: ['French', 'Arabic', 'English']
     },
     sameAs: [
-      'https://facebook.com/marocsoleil',
-      'https://instagram.com/marocsoleil',
-      'https://twitter.com/marocsoleil',
+      'https://facebook.com/algériesoleil',
+      'https://instagram.com/algériesoleil',
+      'https://twitter.com/algériesoleil',
     ]
   }
 };
@@ -108,33 +108,33 @@ export const SEO_CONFIG = {
 // Mots-clés par page
 export const PAGE_SEO = {
   home: {
-    title: 'MarocSoleil | Réservation Hôtels, Circuits & Voitures au Maroc',
-    description: 'MarocSoleil est la plateforme N°1 de réservation touristique au Maroc. Hôtels, circuits, location voitures, appartements, villas. Meilleurs prix garantis. Réservation en ligne sécurisée.',
-    keywords: 'marocsoleil, maroc soleil, maroc tourisme, voyage maroc, hotel maroc, réservation maroc, circuit maroc, location voiture maroc',
+    title: 'AlgérieSoleil | Réservation Hôtels, Circuits & Voitures au Maroc',
+    description: 'AlgérieSoleil est la plateforme N°1 de réservation touristique au Maroc. Hôtels, circuits, location voitures, appartements, villas. Meilleurs prix garantis. Réservation en ligne sécurisée.',
+    keywords: 'algériesoleil, algérie soleil, algérie tourisme, voyage algérie, hotel algérie, réservation algérie, circuit algérie, location voiture algérie',
   },
   
   hotels: {
     title: 'Hôtels au Maroc | Réservation en Ligne - Meilleurs Prix Garantis',
     description: 'Réservez votre hôtel au Maroc : Marrakech, Casablanca, Agadir, Fès, Tanger. Large choix d\'hôtels 3, 4 et 5 étoiles. Annulation gratuite. Paiement sécurisé.',
-    keywords: 'hotel maroc, réservation hotel maroc, hotel marrakech, hotel casablanca, hotel pas cher maroc, riad maroc',
+    keywords: 'hotel algérie, réservation hotel algérie, hotel algérie, hotel algérie, hotel algérie, riad algérie',
   },
   
   appartements: {
     title: 'Location Appartements au Maroc | Vacances & Séjours',
     description: 'Louez un appartement au Maroc pour vos vacances. Appartements meublés à Marrakech, Casablanca, Agadir. Locations courte et longue durée. Prix attractifs.',
-    keywords: 'appartement maroc, location appartement maroc, appartement vacances maroc, location meublée maroc',
+    keywords: 'appartement algérie, location appartement algérie, appartement vacances algérie, location meublée algérie',
   },
   
   villas: {
     title: 'Location Villas de Luxe au Maroc | Avec Piscine Privée',
     description: 'Villas de luxe au Maroc avec piscine privée. Marrakech, Essaouira, Agadir. Villas haut de gamme pour vacances inoubliables. Réservation en ligne.',
-    keywords: 'villa maroc, location villa maroc, villa avec piscine maroc, villa luxe maroc, villa marrakech',
+    keywords: 'villa algérie, location villa algérie, villa avec piscine algérie, villa luxe algérie, villa algérie',
   },
   
   voitures: {
     title: 'Location Voiture Maroc | Aéroport & Villes - Prix Pas Cher',
     description: 'Location de voiture au Maroc : aéroports, Marrakech, Casablanca, Agadir. Large choix de véhicules. Prix compétitifs. Réservation en ligne simple et rapide.',
-    keywords: 'location voiture maroc, location voiture marrakech, location voiture casablanca, location voiture aéroport maroc, voiture pas cher maroc',
+    keywords: 'location voiture algérie, location voiture algérie, location voiture algérie, location voiture algérie, location voiture algérie, voiture pas cher algérie',
   },
   
   circuits: {
@@ -168,9 +168,9 @@ export const PAGE_SEO = {
   },
   
   contact: {
-    title: 'Contact MarocSoleil | Service Client & Réservations',
-    description: 'Contactez MarocSoleil pour vos réservations et questions. Service client disponible 7j/7. Email, téléphone, formulaire de contact.',
-    keywords: 'contact marocsoleil, service client maroc, réservation maroc, assistance tourisme maroc',
+    title: 'Contact AlgérieSoleil | Service Client & Réservations',
+    description: 'Contactez AlgérieSoleil pour vos réservations et questions. Service client disponible 7j/7. Email, téléphone, formulaire de contact.',
+    keywords: 'contact algériesoleil, service client algérie, réservation algérie, assistance tourisme algérie',
   },
 };
 

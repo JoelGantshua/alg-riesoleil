@@ -215,7 +215,7 @@ const Evenements = () => {
   }
 
   return (
-    <div className="min-h-screen bg-yellow-100 bg-gradient-to-b from-yellow-100 to-yellow-50">
+    <div className="min-h-screen bg-white bg-gradient-to-b from-white to-white">
       {/* Hero Section */}
       <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(./assets/events/mrkc.jpg)' }}>
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -240,7 +240,7 @@ const Evenements = () => {
           {events.map((event) => (
             <motion.div
               key={event.id}
-              className="bg-yellow-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
               whileHover={{ y: -5 }}
             >
               <div className="h-48 overflow-hidden">
@@ -282,7 +282,7 @@ const Evenements = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="px-15 py-5 bg-black/30 text-primary font-medium rounded-lg hover:bg-yellow-50 transition-colors mx-auto mt-10">
+        <div className="px-15 py-5 bg-black/30 text-primary font-medium rounded-lg hover:bg-white transition-colors mx-auto mt-10">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Ne manquez aucun événement</h3>
             <p className="text-black/90 mb-8 max-w-2xl mx-auto">

@@ -162,9 +162,9 @@ const Guides = () => {
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="text-xl font-bold text-gray-900">{guide.name}</h3>
-                      <div className="flex items-center bg-yellow-100 px-2 py-1 rounded">
-                        <Star className="w-4 h-4 text-yellow-500 fill-current mr-1" />
-                        <span className="font-semibold text-yellow-700">{guide.rating}</span>
+                      <div className="flex items-center bg-white px-2 py-1 rounded">
+                        <Star className="w-4 h-4 text-white fill-current mr-1" />
+                        <span className="font-semibold text-white">{guide.rating}</span>
                       </div>
                     </div>
 

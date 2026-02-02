@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   ];
 
   return (
-    <nav className="bg-yellow-200 shadow-md fixed w-full z-50">
+    <nav className="bg-white shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo à gauche */}
@@ -149,7 +149,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 to={subItem.path}
                                 onPointerDown={() => { setIsOpen(false); setServicesOpen(false); }}
                                 onClick={() => { setIsOpen(false); setServicesOpen(false); }}
-                                className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-gray-200 hover:bg-white/10 transition-all duration-200 hover:shadow-lg hover:shadow-yellow-200/20"
+                                className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-gray-200 hover:bg-white/10 transition-all duration-200 hover:shadow-lg hover:shadow-white-200/20"
                               >
                                 <div className={`flex items-center justify-center w-10 h-10 rounded-lg bg-linear-to-br ${gradientColor} shadow-lg group-hover:scale-110 group-hover:shadow-xl transition-transform duration-200`}>
                                   {Icon && <Icon className="w-5 h-5 text-white" />}
@@ -161,7 +161,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             );
                           })}
                         </div>
-                        <div className="bg-linear-to-r from-yellow-200/20 to-yellow-200/20 px-4 py-3 border-t border-gray-700/50 backdrop-blur-sm">
+                        <div className="bg-linear-to-r from-white-200/20 to-white-200/20 px-4 py-3 border-t border-gray-700/50 backdrop-blur-sm">
                           <p className="text-xs text-gray-300 text-center font-medium">
                             Découvrez tous nos services exceptionnels
                           </p>

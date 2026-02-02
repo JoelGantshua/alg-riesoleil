@@ -92,7 +92,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       <Hero />
 
       {/* Section Services */}
-      <section className="relative py-20 bg-gradient-to-b from-yellow-50 to-yellow-100">
+      <section className="relative py-20 bg-gradient-to-b from-white to-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -151,7 +151,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                             city: 'Marrakech',
                             images: [activeServiceData.image]
                           })}
-                          className="inline-flex items-center bg-yellow-100 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-100 transition-all duration-300 transform hover:scale-105"
+                          className="inline-flex items-center bg-yellow-500 text-black px-6 py-3 rounded-full font-medium hover:bg-white transition-all duration-300 transform hover:scale-105"
                         >
                           Réserver maintenant <FiArrowRight className="ml-2" />
                         </button>
@@ -185,7 +185,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                   key={index}
                   onClick={() => setActiveService(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-30 ${
-                    index === activeService ? 'bg-yellow-100 w-8' : 'bg-white/50 hover:bg-white/80'
+                    index === activeService ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/80'
                   }`}
                   aria-label={`Aller au service ${index + 1}`}
                 />
@@ -205,7 +205,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               <motion.div 
                 key={service.title}
                 variants={item}
-                className="bg-yellow-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="h-48 overflow-hidden">
                   <img 
@@ -231,7 +231,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* Featured Events Section */}
-      <section className="py-20 bg-yellow-100">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Événements à Venir</h2>
@@ -264,7 +264,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
             ].map((event, index) => (
               <motion.div 
                 key={index}
-                className="bg-yellow-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                 whileHover={{ y: -5 }}
               >
                 <div className="h-48 overflow-hidden">
@@ -294,7 +294,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-yellow-100">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Pourquoi Nous Choisir ?</h2>
@@ -324,7 +324,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
             ].map((feature, index) => (
               <motion.div 
                 key={index}
-                className="bg-yellow-100 p-8 rounded-xl text-center"
+                className="bg-white p-8 rounded-xl text-center"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -349,7 +349,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r bg-black/30 to-yellow-100 text-black">
+      <section className="py-20 bg-gradient-to-r bg-black/30 to-white text-black">
         <div className="container mx-auto px-3 text-center">
           <h2 className="text-4xl font-bold mb-6">Prêt à vivre l'aventure Algérien   ?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

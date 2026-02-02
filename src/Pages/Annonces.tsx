@@ -139,7 +139,7 @@ const Annonces = () => {
   }
 
   return (
-    <div className="min-h-screen bg-yellow-100">
+    <div className="min-h-screen bg-white">
       {/* Hero Section avec Carrousel */}
       <div className="relative h-96 overflow-hidden">
         {/* Images du carrousel */}
@@ -174,14 +174,14 @@ const Annonces = () => {
         {/* Boutons de navigation */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-yellow-100/20 hover:bg-yellow-100/30 text-white p-3 rounded-full backdrop-blur-sm transition-all"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-white text-white p-3 rounded-full backdrop-blur-sm transition-all"
           aria-label="Image précédente"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-yellow-100/20 hover:bg-yellow-100/30 text-white p-3 rounded-full backdrop-blur-sm transition-all"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-white p-3 rounded-full backdrop-blur-sm transition-all"
           aria-label="Image suivante"
         >
           <ChevronRight className="w-6 h-6" />
@@ -194,7 +194,7 @@ const Annonces = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all ${
-                index === currentSlide ? 'bg-yellow-100 w-8' : 'bg-yellow-100/50'
+                index === currentSlide ? 'bg-white' : 'bg-white'
               }`}
               aria-label={`Aller à l'image ${index + 1}`}
             />

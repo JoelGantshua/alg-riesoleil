@@ -118,7 +118,7 @@ const PropertyList: React.FC<PropertyListProps> = ({
                   </h3>
                   {typeof property.rating === 'number' && (
                     <div className="flex items-center bg-emerald-50 px-2 py-1 rounded flex-shrink-0 ml-2">
-                      <Star className="h-4 w-4 text-yellow-400 fill-current mr-1" />
+                      <Star className="h-4 w-4 text-white fill-current mr-1" />
                       <span className="text-sm font-medium">
                         {property.rating.toFixed(1)}
                       </span>

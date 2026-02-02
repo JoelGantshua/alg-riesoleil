@@ -173,10 +173,10 @@ const getDefaultSettings = (): SiteSettings => ({
   },
   
   // Général
-  site_name: 'MarocSoleil',
+  site_name: 'AlgérieSoleil',
   site_slogan: 'Votre destination de rêve au Maroc',
-  site_description_short: 'Découvrez le Maroc avec MarocSoleil',
-  site_description_long: 'MarocSoleil est votre partenaire de confiance pour découvrir les merveilles du Maroc. Nous proposons des services de qualité pour rendre votre séjour inoubliable.',
+  site_description_short: 'Découvrez l\'Algérie',
+  site_description_long: 'AlgérieSoleil est votre partenaire de confiance pour découvrir les merveilles du Maroc. Nous proposons des services de qualité pour rendre votre séjour inoubliable.',
   site_keywords: 'maroc, tourisme, voyage, hôtel, location, circuits',
   logo_url: '',
   favicon_url: '',
@@ -188,7 +188,7 @@ const getDefaultSettings = (): SiteSettings => ({
   about_text: 'Nous sommes une équipe passionnée dédiée à vous faire découvrir les merveilles du Maroc.',
   why_choose_us_title: 'Pourquoi nous choisir ?',
   why_choose_us_text: 'Service de qualité, prix compétitifs, expérience locale.',
-  footer_text: '© 2024 MarocSoleil. Tous droits réservés.',
+  footer_text: '© 2024 AlgérieSoleil. Tous droits réservés.',
   legal_mentions: '',
   privacy_policy: '',
   terms_conditions: '',

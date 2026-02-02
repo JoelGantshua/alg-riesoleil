@@ -139,8 +139,7 @@ const Services = () => {
               </h1>
               <div className="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto my-8 rounded-full"></div>
               <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Des expériences uniques, des paysages à couper le souffle et un accueil chaleureux vous attendent
-              </p>
+                Des expériences uniques, des paysages à couper le souffle et un accueil chaleureux vous attendent en Algérie   </p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

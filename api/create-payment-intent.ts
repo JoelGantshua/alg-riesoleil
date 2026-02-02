@@ -1,11 +1,31 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import Stripe from 'stripe';
+
+// Types pour la requête et la réponse
+interface VercelRequest {
+  method?: string;
+  body?: any;
+}
+
+interface VercelResponse {
+  status: (code: number) => VercelResponse;
+  json: (data: any) => void;
+}
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 
-const stripe = stripeSecretKey
-  ? new Stripe(stripeSecretKey, { apiVersion: '2023-10-16' })
-  : null;
+// Initialisation sécurisée de Stripe
+let stripe: Stripe | null = null;
+
+try {
+  if (stripeSecretKey) {
+    stripe = new Stripe(stripeSecretKey, {
+      apiVersion: '2025-10-29.clover',
+      typescript: true
+    });
+  }
+} catch (error) {
+  console.error('Failed to initialize Stripe:', error);
+}
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {

@@ -21,14 +21,40 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    // Configuration pour les imports dynamiques
+    sourcemap: process.env.NODE_ENV !== 'production',
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Création de chunks séparés pour les pages
-          admin: ['./src/Pages/dashboards/AdminDashboard'],
-          partner: ['./src/Pages/dashboards/PartnerDashboard'],
-          client: ['./src/Pages/dashboards/ClientDashboard'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('@sentry/')) {
+              return 'vendor-sentry';
+            }
+            return 'vendor';
+          }
+          if (id.includes('src/Pages/dashboards/AdminDashboard')) {
+            return 'admin';
+          }
+          if (id.includes('src/Pages/dashboards/PartnerDashboard')) {
+            return 'partner';
+          }
+          if (id.includes('src/Pages/dashboards/ClientDashboard')) {
+            return 'client';
+          }
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: (assetInfo) => {
+          if (!assetInfo.name) return 'assets/[name]-[hash][extname]';
+          const info = assetInfo.name.split('.');
+          const ext = info[info.length - 1] || 'misc';
+          if (/\.(png|jpe?g|svg|gif|webp|avif)$/i.test(assetInfo.name)) {
+            return 'assets/images/[name]-[hash][extname]';
+          }
+          if (/\.(woff|woff2|eot|ttf|otf)$/i.test(assetInfo.name)) {
+            return 'assets/fonts/[name]-[hash][extname]';
+          }
+          return `assets/${ext}/[name]-[hash][extname]`;
         },
       },
     },

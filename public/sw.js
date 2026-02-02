@@ -1,63 +1,91 @@
-const CACHE_NAME = 'my-app-cache-v1';
-const resourcesToCache = [
+const CACHE_NAME = 'alg-riesoleil-cache-v1';
+const OFFLINE_URL = '/offline.html';
+
+// Fichiers à mettre en cache lors de l'installation
+const PRECACHE_ASSETS = [
   '/',
   '/index.html',
   '/favicon.ico',
   '/logo192.png',
   '/logo512.png',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
+  '/manifest.json'
 ];
 
-// Installation du Service Worker (tolérant aux erreurs)
+// Installation du Service Worker
 self.addEventListener('install', (event) => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    const results = await Promise.allSettled(
-      resourcesToCache.map(async (url) => {
-        try {
-          const response = await fetch(url, { cache: 'no-cache' });
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          await cache.put(url, response.clone());
-          return { url, ok: true };
-        } catch (err) {
-          console.warn('[sw] Failed to cache', url, err);
-          return { url, ok: false, error: String(err) };
-        }
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then((cache) => {
+        console.log('Service Worker: Precaching assets');
+        return cache.addAll(PRECACHE_ASSETS);
       })
-    );
-    const failed = results
-      .filter(r => r.status === 'fulfilled' && r.value && !r.value.ok)
-      .map(r => r.value.url)
-      .filter(Boolean);
-    if (failed.length) {
-      console.warn('[sw] Some resources failed to cache:', failed);
-    }
-    // termine l'installation même si certains fichiers ont échoué
-    // @ts-ignore
-    await self.skipWaiting();
-  })());
+      .then(() => self.skipWaiting())
+  );
 });
 
-// Gestion des requêtes réseau (basic cache-first fallback)
-self.addEventListener('fetch', (event) => {
-  event.respondWith((async () => {
-    try {
-      const cached = await caches.match(event.request);
-      if (cached) return cached;
-      const response = await fetch(event.request);
-      return response;
-    } catch (err) {
-      return new Response('Service Worker fetch error', { status: 503 });
-    }
-  })());
-});
-
-// Nettoyage des anciens caches
+// Activation du Service Worker
 self.addEventListener('activate', (event) => {
-  event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(keys.map(k => (k !== CACHE_NAME ? caches.delete(k) : Promise.resolve())));
-    // @ts-ignore
-    await self.clients.claim();
-  })());
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cache) => {
+          if (cache !== CACHE_NAME) {
+            console.log('Service Worker: Clearing old cache');
+            return caches.delete(cache);
+          }
+          return null;
+        }).filter(Boolean)
+      );
+    })
+  );
+  
+  // Prendre le contrôle immédiatement
+  return self.clients.claim();
 });
+
+// Stratégie de mise en cache : Stale-While-Revalidate
+self.addEventListener('fetch', (event) => {
+  // Ignorer les requêtes non-GET
+  if (event.request.method !== 'GET') return;
+
+  // Ignorer les requêtes vers des API externes qui ne sont pas des polices
+  if (!event.request.url.startsWith(self.location.origin) && 
+      !event.request.url.includes('fonts.googleapis.com') &&
+      !event.request.url.includes('fonts.gstatic.com')) {
+    return;
+  }
+
+  event.respondWith(handleFetch(event));
+});
+
+async function handleFetch(event) {
+  const cachedResponse = await caches.match(event.request);
+  
+  // Essayer de récupérer depuis le réseau
+  try {
+    const networkResponse = await fetch(event.request);
+    
+    // Si la réponse est valide, la mettre en cache
+    if (networkResponse && networkResponse.status === 200) {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.put(event.request, networkResponse.clone());
+    }
+    
+    return networkResponse;
+  } catch (error) {
+    // En cas d'erreur réseau, retourner la réponse en cache si disponible
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+    
+    // Si pas de cache et navigation, retourner la page hors ligne
+    if (event.request.mode === 'navigate') {
+      return caches.match(OFFLINE_URL);
+    }
+    
+    return new Response('Ressource non disponible hors ligne', { 
+      status: 503,
+      headers: { 'Content-Type': 'text/plain' }
+    });
+  }
+}

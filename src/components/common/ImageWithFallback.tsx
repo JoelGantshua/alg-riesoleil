@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { CSSProperties } from 'react';
 
 interface ImageWithFallbackProps {
   src: string | undefined;
@@ -7,6 +8,29 @@ interface ImageWithFallbackProps {
   className?: string;
   showCount?: number;
 }
+
+const styles: { [key: string]: CSSProperties } = {
+  container: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+  },
+  image: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover' as const,
+  },
+  badge: {
+    position: 'absolute',
+    bottom: '0.5rem',
+    right: '0.5rem',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    color: 'white',
+    fontSize: '0.75rem',
+    padding: '0.25rem 0.5rem',
+    borderRadius: '0.25rem',
+  },
+};
 
 export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
   src,
@@ -25,16 +49,22 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
     }
   };
 
+  // Combiner les styles de base avec les classes personnalisées
+  const containerStyle = {
+    ...styles.container,
+    ...(className ? { className } : {}),
+  };
+
   return (
-    <div className={`relative ${className}`}>
+    <div style={containerStyle}>
       <img
         src={error || !imgSrc ? fallbackSrc : imgSrc}
         alt={alt}
-        className="w-full h-full object-cover"
+        style={styles.image}
         onError={handleError}
       />
       {showCount !== undefined && (
-        <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+        <div style={styles.badge}>
           {showCount} {showCount > 1 ? 'images' : 'image'}
         </div>
       )}

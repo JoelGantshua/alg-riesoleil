@@ -48,9 +48,9 @@ SELECT * FROM evenements;
 **Résultat attendu** : 6 événements affichés
 - Festival des Roses à Kelaa M'Gouna
 - Marathon des Sables
-- Festival des Arts Populaires de Marrakech
+- Festival des Arts Populaires de Alger
 - Festival Gnaoua et Musiques du Monde
-- Festival International du Film de Marrakech
+- Festival International du Film de Alger
 - Moussem de Tan-Tan
 
 ### **Vérifier la table `newsletter_subscriptions`** :

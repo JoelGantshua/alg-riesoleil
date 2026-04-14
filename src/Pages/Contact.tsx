@@ -69,13 +69,13 @@ const Contact = () => {
     {
       icon: <FiPhone className="h-6 w-6 text-primary" />,
       title: 'Téléphone',
-      description: settings?.phone_primary || '+212 669 742 780',
-      link: `tel:${settings?.phone_primary?.replace(/\s/g, '') || '+212669742780'}`
+      description: settings?.phone_primary || '06 69 74 27 80',
+      link: `tel:${settings?.phone_primary?.replace(/\s/g, '') || '0669742780'}`
     },
     {
       icon: <FiMapPin className="h-6 w-6 text-primary" />,
       title: 'Adresse',
-      description: `${settings?.address || 'Boulevard Zighoud Youcef '}, ${settings?.postal_code || '40000'} ${settings?.city || 'Marrakech'}, ${settings?.country || 'Algérie'}`,
+      description: `${settings?.address || 'Boulevard Zighoud Youcef '}, ${settings?.postal_code || '40000'} ${settings?.city || 'Alger'}, ${settings?.country || 'Algérie'}`,
       link: `https://maps.google.com/?q=${settings?.city || 'Alger'},${settings?.country || 'Algérie'}`
     },
     {

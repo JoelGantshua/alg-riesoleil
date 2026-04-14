@@ -122,10 +122,10 @@ VALUES
     true
   ),
   (
-    'Festival des Arts Populaires de Marrakech',
+    'Festival des Arts Populaires de Alger',
     'Découvrez la richesse du patrimoine culturel marocain à travers des spectacles de musique, de danse et d''art traditionnels.',
     '22-30 Juin 2024',
-    'Marrakech, Maroc',
+    'Alger, Algérie',
     '18:00 - Minuit',
     'Culture',
     './assets/events/2.jpg',
@@ -138,7 +138,7 @@ VALUES
     'Festival Gnaoua et Musiques du Monde',
     'Le plus grand festival de musique Gnaoua au monde, avec des artistes internationaux et locaux.',
     '20-23 Juin 2024',
-    'Essaouira, Maroc',
+    'Alger, Algérie',
     '20:00 - 02:00',
     'Musique',
     './assets/events/mrkc.jpg',
@@ -148,10 +148,10 @@ VALUES
     false
   ),
   (
-    'Festival International du Film de Marrakech',
+    'Festival International du Film de Alger',
     'Découvrez les meilleurs films du monde entier dans la ville rouge.',
     '1-9 Décembre 2024',
-    'Marrakech, Maroc',
+    'Alger, Algérie',
     '18:00 - 23:00',
     'Cinéma',
     './assets/events/2.jpg',
@@ -164,7 +164,7 @@ VALUES
     'Moussem de Tan-Tan',
     'Patrimoine culturel immatériel de l''UNESCO, célébrant les traditions nomades.',
     '15-20 Mai 2024',
-    'Tan-Tan, Maroc',
+    'Alger, Algérie',
     'Toute la journée',
     'Culture',
     './assets/events/T0.jpeg',

@@ -8,8 +8,8 @@ export type PropertyType = 'apt1' | 'apt2' | 'villa' | 'hotel';
 
 export const getPropertyImages = (city: string, type: string): string[] => {
   const normalizedCity = city.toUpperCase();
-  const cityFolder = normalizedCity === 'MEKNES' ? 'Meknès' : 
-                    normalizedCity === 'ESSAOUIRA' ? 'Essaouira' :
+  const cityFolder = normalizedCity === 'ORAN' ? 'Oran' : 
+                    normalizedCity === 'CONSTANTINE' ? 'Constantine' :
                     normalizedCity;
   
   const normalizedType = type.toLowerCase().startsWith('appart') ? 

@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = 'Maroc Soleil - Découvrez le Maroc',
+  title = 'Algérie Soleil - Découvrez le Maroc',
   description = 'Voyagez à travers l\'Algérie et découvrez des expériences uniques',
   keywords = ['Algérie', 'tourisme', 'voyage', 'hôtels', 'activités'],
   image = '/logo.png'

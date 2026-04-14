@@ -22,14 +22,14 @@
 │ Nous sommes à votre écoute      │
 ├─────────────────────────────────┤
 │ 📞 Téléphone                    │ ← Cliquable
-│    +212 6 12 34 56 78           │
+│  06 69 74 27 80         │
 ├─────────────────────────────────┤
 │ ✉️ Email                        │ ← Cliquable
-│    contact@maroc2030.ma         │
+│    imam@orange.fr         │
 ├─────────────────────────────────┤
 │ 📍 Adresse                      │
 │    Avenue Mohammed VI           │
-│    Meknès 50000, Maroc          │
+│    Alger 50000, Algérie          │
 ├─────────────────────────────────┤
 │ 🕐 Horaires d'ouverture         │
 │    Lun - Ven : 9h00 - 18h00    │
@@ -153,8 +153,8 @@ const [showCallModal, setShowCallModal] = useState(false);
 ```
 
 ### **Interactions** :
-- ✅ **Téléphone** : `href="tel:+212612345678"` → Appel direct
-- ✅ **Email** : `href="mailto:contact@maroc2030.ma"` → Email direct
+- ✅ **Téléphone** : `href="tel: 0669742780"` → Appel direct
+- ✅ **Email** : `href="mailto:imam@orange.fr"` → Email direct
 - ✅ **Fermeture** : Bouton X ou clic en dehors
 - ✅ **Backdrop** : Blur + semi-transparent
 
@@ -192,7 +192,7 @@ const [showCallModal, setShowCallModal] = useState(false);
 
 #### **Avant** ❌ :
 ```tsx
-<a href="tel:+212612345678">
+<a href="tel: 0669742780">
   Appelez-nous
 </a>
 ```

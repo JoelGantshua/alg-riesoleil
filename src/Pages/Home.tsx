@@ -258,7 +258,7 @@ const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               {
                 title: "Festival des Arts",
                 date: "22-30 Juin 2026",
-                location: "Meknès",
+                location: "Alger",
                 image: "./images/15.jpg"
               }
             ].map((event, index) => (

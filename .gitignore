@@ -149,3 +149,5 @@ yarn-error.log*
 .vscode
 *.sublime-*
 *.code-workspace
+
+.vercel

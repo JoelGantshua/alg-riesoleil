@@ -104,10 +104,10 @@ VALUES
     true
   ),
   (
-    'Festival des Arts Populaires de Marrakech',
+    'Festival des Arts Populaires de Alger',
     'Découvrez la richesse du patrimoine culturel marocain à travers des spectacles de musique, de danse et d''art traditionnels.',
     '22-30 Juin 2024',
-    'Marrakech, Maroc',
+    'Alger, Algérie',
     '18:00 - Minuit',
     'Culture',
     './assets/events/2.jpg',
@@ -130,10 +130,10 @@ VALUES
     false
   ),
   (
-    'Festival International du Film de Marrakech',
+    'Festival International du Film de Alger',
     'Découvrez les meilleurs films du monde entier dans la ville rouge.',
     '1-9 Décembre 2024',
-    'Marrakech, Maroc',
+    'Alger, Algérie',
     '18:00 - 23:00',
     'Cinéma',
     './assets/events/2.jpg',
